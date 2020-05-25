@@ -85,10 +85,10 @@ AddonManager::remove(AcmeAddon::class);
 $addons = AddonManager::getAddons();
 ```
 
-### Auto-Discovery & Registration
+### Auto-Discover & Register Addons
 
 ```php
-AddonManager::discovery();
+AddonManager::discover();
 ```
 
 ## Contributing

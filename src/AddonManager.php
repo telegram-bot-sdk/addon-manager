@@ -22,11 +22,11 @@ class AddonManager
     }
 
     /**
-     * Auto-discovery and registration.
+     * Auto-discover and register.
      *
      * @throws TelegramSDKException
      */
-    public static function discovery(): void
+    public static function discover(): void
     {
         $addons = Discovery::getInstance()->get('telegram/addon');
 

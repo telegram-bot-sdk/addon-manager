@@ -19,6 +19,6 @@ class AddonServiceProvider extends ServiceProvider
 
     public function register(): void
     {
-        AddonManager::discovery();
+        AddonManager::discover();
     }
 }
