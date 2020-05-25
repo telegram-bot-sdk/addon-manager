@@ -1,0 +1,60 @@
+{
+  "name": "telegram-bot-sdk/addon-manager",
+  "type": "library",
+  "description": "Addon Manager for Telegram Bot SDK",
+  "keywords": [
+    "telegram",
+    "addon",
+    "telegram addon",
+    "chatbot",
+    "telegram chatbot",
+    "telegram bot sdk",
+    "telegram-bot-sdk",
+    "telegram bot addon"
+  ],
+  "homepage": "https://github.com/telegram-bot-sdk/addon-manager",
+  "license": "BSD-3-Clause",
+  "authors": [
+    {
+      "name": "Irfaq Syed",
+      "homepage": "https://github.com/irazasyed"
+    }
+  ],
+  "require": {
+    "php": "^7.4",
+    "illuminate/support": "^6.0 || ^7.0",
+    "thecodingmachine/discovery": "^1.2"
+  },
+  "require-dev": {
+    "phpunit/phpunit": ">=8.5",
+    "telegram-bot-sdk/telegram-bot-sdk": "^4.0@dev"
+  },
+  "config": {
+    "sort-packages": true
+  },
+  "extra": {
+    "branch-alias": {
+      "dev-master": "1.0-dev"
+    },
+    "laravel": {
+      "providers": [
+        "Telegram\\Bot\\Addon\\Laravel\\AddonServiceProvider"
+      ]
+    }
+  },
+  "autoload": {
+    "psr-4": {
+      "Telegram\\Bot\\Addon\\": "src/"
+    }
+  },
+  "autoload-dev": {
+    "psr-4": {
+      "Telegram\\Bot\\Addon\\Tests\\": "tests/"
+    }
+  },
+  "minimum-stability": "dev",
+  "prefer-stable": true,
+  "scripts": {
+    "test": "phpunit"
+  }
+}
