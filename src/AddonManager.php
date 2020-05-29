@@ -44,7 +44,7 @@ class AddonManager
      */
     public static function register(string $addon): void
     {
-        if (!class_exists($addon) && !is_subclass_of($addon, Addon::class)) {
+        if (! class_exists($addon) && ! is_subclass_of($addon, Addon::class)) {
             throw new TelegramSDKException(
                 'Failed to register [' . $addon . '] addon. It does not exists or not a valid class.'
             );

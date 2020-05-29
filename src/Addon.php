@@ -2,8 +2,8 @@
 
 namespace Telegram\Bot\Addon;
 
-use Telegram\Bot\Bot;
 use Telegram\Bot\Addon\Contracts\AddonContract;
+use Telegram\Bot\Bot;
 
 abstract class Addon implements AddonContract
 {
