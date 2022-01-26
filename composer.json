@@ -21,8 +21,8 @@
     }
   ],
   "require": {
-    "php": "^7.4 || ^8.0",
-    "illuminate/support": "6 - 8",
+    "php": ">=7.4",
+    "illuminate/support": "6 - 9",
     "thecodingmachine/discovery": "^1.2"
   },
   "require-dev": {
