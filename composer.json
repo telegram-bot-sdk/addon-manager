@@ -22,7 +22,7 @@
   ],
   "require": {
     "php": ">=7.4",
-    "illuminate/support": "6 - 9",
+    "illuminate/support": "6 - 10",
     "thecodingmachine/discovery": "^1.2"
   },
   "require-dev": {
