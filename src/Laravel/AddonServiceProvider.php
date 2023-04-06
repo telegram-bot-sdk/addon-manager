@@ -13,7 +13,7 @@ class AddonServiceProvider extends ServiceProvider
     /**
      * @return mixed|void
      */
-    public function boot()
+    public function boot(): void
     {
     }
 

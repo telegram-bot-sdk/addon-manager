@@ -13,8 +13,6 @@ class AddonManager
 
     /**
      * Get Addons List.
-     *
-     * @return array
      */
     public static function getAddons(): array
     {
@@ -69,8 +67,6 @@ class AddonManager
 
     /**
      * Load registered addons.
-     *
-     * @param Bot $bot
      */
     public static function loadAddons(Bot $bot): void
     {
