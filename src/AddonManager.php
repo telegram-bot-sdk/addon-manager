@@ -36,7 +36,7 @@ class AddonManager
     /**
      * Add an addon to the list.
      *
-     * @param string $addon Addon class name
+     * @param  string  $addon Addon class name
      *
      * @throws TelegramSDKException
      */
@@ -44,7 +44,7 @@ class AddonManager
     {
         if (! class_exists($addon) && ! is_subclass_of($addon, Addon::class)) {
             throw new TelegramSDKException(
-                'Failed to register [' . $addon . '] addon. It does not exists or not a valid class.'
+                'Failed to register ['.$addon.'] addon. It does not exists or not a valid class.'
             );
         }
 
@@ -56,7 +56,7 @@ class AddonManager
     /**
      * Remove an addon from the list.
      *
-     * @param string $addon Addon class name
+     * @param  string  $addon Addon class name
      */
     public static function remove(string $addon): void
     {
