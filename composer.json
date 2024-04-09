@@ -22,7 +22,7 @@
   "homepage": "https://github.com/telegram-bot-sdk/addon-manager",
   "require": {
     "php": ">=8.1",
-    "illuminate/support": "^10",
+    "illuminate/support": "^10.0 || ^11.0",
     "thecodingmachine/discovery": "^1.2"
   },
   "require-dev": {
